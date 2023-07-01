@@ -7,12 +7,7 @@ var containsNearbyDuplicate = function(nums, k) {
     let arr = []
 
     for (let j=0; nums.length>j; j++) {
-        console.log('j', j)
-        console.log('nums[j]', nums[j])
-        console.log('arr[nums[j]]',arr[nums[j]])
-
         if (arr[nums[j]] != undefined && Math.abs(arr[nums[j]] - j) <= k) {
-            console.log(' Math.abs(arr[nums[j]] - j)', Math.abs(arr[nums[j]] - j))
             return true
         }
 
