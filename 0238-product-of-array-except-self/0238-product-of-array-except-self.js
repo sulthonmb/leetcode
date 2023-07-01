@@ -25,7 +25,7 @@ var productExceptSelf = function(nums) {
         if (i == nums.length-1) {
             max = nums[i]
         } else {
-            max = Math.imul(max, nums[i])
+            max = max * nums[i]
         }
     }
 
